@@ -19,5 +19,7 @@ int main()
     std::cout << "A + B\n" << A + B << "\n\n";
     std::cout << "A * B\n" << A * B << "\n";
 
+    std::cout<<"Juts for test";
+
     return 0;
 }
