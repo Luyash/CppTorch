@@ -1,4 +1,4 @@
-#include "include/Layers/Dense.h"
+#include "CppTorch/Layers/Dense.h"
 
 namespace CppTorch
 {

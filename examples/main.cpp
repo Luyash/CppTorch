@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "include/Layers/Dense.h"
+#include "../include/Layers/dense.h"
 
 int main()
 {
