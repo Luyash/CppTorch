@@ -1,25 +1,22 @@
 #include <iostream>
-#include <Eigen/Dense>
+
+#include "include/Layers/Dense.h"
 
 int main()
 {
-    Eigen::MatrixXd A(2,2);
+    // Create a Dense layer
+    CppTorch::Dense layer(2, 1);
 
-    A << 1, 2,
-         3, 4;
+    // One input with 2 features
+    Eigen::MatrixXd input(1, 2);
 
-    Eigen::MatrixXd B(2,2);
+    input << 3, 4;
 
-    B << 5, 6,
-         7, 8;
+    // Forward propagation
+    Eigen::MatrixXd output = layer.forward(input);
 
-    std::cout << "Matrix A\n" << A << "\n\n";
-    std::cout << "Matrix B\n" << B << "\n\n";
-
-    std::cout << "A + B\n" << A + B << "\n\n";
-    std::cout << "A * B\n" << A * B << "\n";
-
-    std::cout<<"Juts for test";
+    std::cout << "Output:\n";
+    std::cout << output << std::endl;
 
     return 0;
 }
