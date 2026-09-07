@@ -1,6 +1,7 @@
 #pragma once
 
-#include "include/Layers/Layer.h"
+#include <Eigen/Dense>
+#include "Layers.h"
 
 namespace CppTorch
 {

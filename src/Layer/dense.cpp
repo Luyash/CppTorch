@@ -1,7 +1,8 @@
-#include "../../CppTorch/Layers/Dense.h"
+#include "../../include/CppTorch/Layers/Dense.h"
 
 namespace CppTorch
-{
+{ 
+    
     Dense::Dense(int input_size, int output_size)
     {
         weights = Eigen::MatrixXd::Ones(input_size, output_size);
