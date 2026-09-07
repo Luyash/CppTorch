@@ -1,6 +1,9 @@
 #include <iostream>
 
 #include "../include/CppTorch/Layers/Dense.h"
+#include "../include/CppTorch/Loss/MSE.h"
+#include "../include/CppTorch/Loss/BinaryCrossEntropy.h"
+
 
 int main()
 {
