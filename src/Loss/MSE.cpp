@@ -7,6 +7,9 @@ namespace CppTorch
         const Eigen::MatrixXd& actual
     )
     {
-        // Your implementation goes here
+        Eigen::MatrixXd difference = predicted - actual;
+        Eigen::MatrixXd squared = difference.array().square();
+        double loss = squared.mean();
+        return loss;
     }
 }
