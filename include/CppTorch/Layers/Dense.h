@@ -28,7 +28,9 @@ namespace CppTorch
         );
 
         Eigen::MatrixXd forward(
-            const Eigen::MatrixXd& input
-        ) override;
+            const Eigen::MatrixXd& input) override;
+
+        Eigen::MatrixXd backward(
+        const Eigen::MatrixXd& gradient) override;
     };
 }
