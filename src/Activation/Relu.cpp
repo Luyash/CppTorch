@@ -8,4 +8,11 @@ namespace CppTorch
     {
         return input.array().max(0.0);
     }
+
+    Eigen::MatrixXd ReLU::derivative(
+        const Eigen::MatrixXd& input
+    )
+    {
+        return (input.array() > 0.0).cast<double>();
+    }
 }

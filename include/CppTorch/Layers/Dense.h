@@ -14,9 +14,13 @@ namespace CppTorch
         Eigen::MatrixXd weights;
         Eigen::MatrixXd bias;
 
+        Eigen::MatrixXd last_input;
+        Eigen::MatrixXd last_z;
+
         std::unique_ptr<Activation> activation;
 
     public:
+
         Dense(
             int input_size,
             int output_size,

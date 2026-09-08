@@ -8,4 +8,14 @@ namespace CppTorch
     {
         return input;
     }
+
+    Eigen::MatrixXd Linear::derivative(
+        const Eigen::MatrixXd& input
+    )
+    {
+        return Eigen::MatrixXd::Ones(
+            input.rows(),
+            input.cols()
+        );
+    }
 }

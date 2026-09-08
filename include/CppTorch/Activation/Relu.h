@@ -10,5 +10,9 @@ namespace CppTorch
         Eigen::MatrixXd forward(
             const Eigen::MatrixXd& input
         ) override;
+
+        Eigen::MatrixXd derivative(
+            const Eigen::MatrixXd& input
+        ) override;
     };
 }

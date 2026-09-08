@@ -20,12 +20,10 @@ namespace CppTorch
         );
     }
 
-    Eigen::MatrixXd Dense::forward(
-        const Eigen::MatrixXd& input
-    )
+    Eigen::MatrixXd Dense::forward(const Eigen::MatrixXd& input)
     {
-        Eigen::MatrixXd z = input * weights + bias;
-
-        return activation->forward(z);
+        last_input = input;
+        last_z = input * weights + bias;
+        return activation->forward(last_z);
     }
 }
