@@ -38,7 +38,8 @@
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [
-    "d:/CppTorch/include"],
+    "d:/CppTorch/include"
+  ],
   "C_Cpp_Runner.includeSearch": [
     "*",
     "**/*"
