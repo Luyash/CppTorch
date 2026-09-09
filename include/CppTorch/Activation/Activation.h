@@ -4,7 +4,7 @@
 
 namespace CppTorch
 {
-    class Layer
+    class Activation
     {
     public:
 
@@ -12,10 +12,10 @@ namespace CppTorch
             const Eigen::MatrixXd& input
         ) = 0;
 
-        virtual Eigen::MatrixXd backward(
-            const Eigen::MatrixXd& gradient
+        virtual Eigen::MatrixXd derivative(
+            const Eigen::MatrixXd& input
         ) = 0;
 
-        virtual ~Layer() = default;
+        virtual ~Activation() = default;
     };
 }
